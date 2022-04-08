@@ -1,0 +1,89 @@
+html {
+  background-color: #141414;
+  font-family: IBM Plex Sans;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header img {
+  width: min-content;
+  margin: 25px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 30px;
+}
+
+.usuarios {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.usuario {
+  width: 160px;
+  height: 210px;
+  opacity: 50%;
+  transition: opacity 0.7s;
+  display: flex;
+  flex-direction: column;
+}
+
+.usuarios figure {
+  border-radius: 10px;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.usuarios img {
+  transition: transform 0.7s;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px 50px;
+  background-color: black;
+  transition: color 0.7s, background-color 0.7s;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+}
+
+.usuario:hover {
+  opacity: 100%;
+}
+
+.usuario figure:hover {
+  border: 2px solid white;
+}
+
+.usuario img:hover {
+  transform: scale(1.25);
+}
+
+.add-perfil img:hover {
+  border-radius: 10px;
+  transform: scale(1);
+
+  opacity: 100%;
+}
